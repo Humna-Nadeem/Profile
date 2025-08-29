@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+.main3 {
+  padding: 80px 6%;
+  text-align: center;
+  background: black; 
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+}
+
+.main3 h2 {
+  font-size: clamp(1.8rem, 4vw, 42px);
+  font-weight: 600;
+  line-height: 1.3;
+  margin-bottom: 20px;
+}
+
+.spannnn {
+  color: var(--primary-color, #ff4d67); 
+}
+
+.main3 p {
+  font-size: clamp(0.9rem, 2vw, 16px);
+  color: #ccc;
+  margin-bottom: 60px;
+  line-height: 1.6;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+  gap: 20px;
+  padding: 0 5px;
+  justify-items: center;
+}
+
+.card1 {
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 4px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  aspect-ratio: 1 / 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 !important; 
+}
+
+.card1 img {
+  width: 300px !important;
+  height: 300px !important;
+  object-fit: contain;
+  margin-bottom: 10px !important;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+
+.card1 img::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -150%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.6) 50%,
+    transparent 100%
+  );
+  transform: skewX(-20deg);
+  animation: shine 3s infinite;
+}
+
+@keyframes shine {
+  0% {
+    left: -150%;
+  }
+  50% {
+    left: 150%;
+  }
+  100% {
+    left: 150%;
+  }
+}
+
+.card1 p {
+  font-size: 15px;
+  width: 60%;
+  color: #ddd;
+  line-height: 1.5;
+  margin-bottom: 19px;
+}
+
+.card1:hover {
+  transform: translateY(-12px) scale(1.03);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.4);
+  border-color: var(--primary-color);
+}
+
+
+@media (max-width: 768px) {
+  .main3 {
+    padding: 60px 5%;
+  }
+
+  .main3 p {
+    margin-bottom: 40px;
+  }
+
+  
+  .cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+  }
+
+  .card1 img {
+    width: 250px !important;
+    height: 250px !important;
+  }
+
+  .card1 p {
+    font-size: 14px;
+    width: 80%;
+  }
+}
+
+@media (max-width: 480px) {
+  .main3 h2 {
+    font-size: 1.6rem;
+  }
+
+  .card1 img {
+    width: 140px !important;
+    height: 140px !important;
+  }
+
+  .card1 p {
+    font-size: 13px;
+    width: 90%;
+  }
+}

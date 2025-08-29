@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+.years {
+  display: flex;
+  justify-content: center;   
+  align-items: center;       
+  text-align: center;
+  gap: 80px;
+  padding: 10px 2%;
+  background-color: rgba(243, 240, 242, 1);
+  font-family: "Poppins", sans-serif;
+  opacity: 0;
+  transform: translateY(40px);
+  animation: fadeInUp 1s ease forwards;
+}
+
+.years h2 {
+  color: #000;
+  font-size: 60px;
+  font-weight: 700;
+  margin: 0;
+  transition: transform 0.3s ease;
+  position: relative;
+  display: inline-block;
+}
+
+
+.years h2:hover {
+  background: linear-gradient(
+    120deg,
+    #2e003e 0%,   /* deep dark purple */
+    #6a0dad 30%,  /* royal purple */
+    #b066ff 60%,  /* light violet */
+    #2e003e 100%
+  );
+  background-size: 250% 250%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: glitter 1.5s linear infinite;
+  transform: translateY(-5px) scale(1.05);
+}
+
+
+@keyframes glitter {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.years p {
+  color: #000;
+  font-size: 17px;
+  margin: 8px 0 0;
+  transition: color 0.3s ease;
+}
+.years p:hover{
+    color: var(--primary-color);
+}
+
+
+
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+@media (max-width: 900px) {
+  .years {
+    flex-direction: column;
+    gap: 40px;
+    padding: 60px 4%;
+  }
+  .years h2 {
+    font-size: 42px;
+  }
+  .years p {
+    font-size: 18px;
+  }
+}
