@@ -16,8 +16,8 @@
 
 .years h2 {
   color: #000;
-  font-size: 60px;
-  font-weight: 700;
+  font-size: 55px;
+  font-weight: 600;
   margin: 0;
   transition: transform 0.3s ease;
   position: relative;
@@ -89,5 +89,35 @@
   }
   .years p {
     font-size: 18px;
+  }
+}
+@media (max-width: 900px) {
+  .years {
+    flex-direction: column;
+    gap: 30px;          /* smaller spacing */
+    padding: 40px 4%;   /* reduce padding */
+  }
+
+  .years h2 {
+    font-size: 34px;    /* smaller heading */
+  }
+
+  .years p {
+    font-size: 15px;    /* slightly smaller text */
+  }
+}
+
+@media (max-width: 600px) {
+  .years {
+    gap: 20px;          /* tighter spacing */
+    padding: 25px 5%;   /* smaller padding */
+  }
+
+  .years h2 {
+    font-size: 26px;    /* even smaller for mobile */
+  }
+
+  .years p {
+    font-size: 14px;
   }
 }

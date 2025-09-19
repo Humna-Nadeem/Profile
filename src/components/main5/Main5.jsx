@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import "./Main5.css";
 import p1img from "../imgs/p1img.png";
 import p2img from "../imgs/p2img.png";
-import p3img from "../imgs/p3img.png";
+import person2 from "../imgs/person2.png";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
@@ -75,7 +75,7 @@ export default function Main5() {
         </div>
 
         <div className="cardd1">
-          <img src={p3img} alt="AI" />
+          <img src={person2} alt="AI" />
           <p>
             AI Integration <br />
             Chatbots, smart automation, and data-driven tools.

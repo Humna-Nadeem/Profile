@@ -104,11 +104,7 @@
 }
 
 .sticky-linkedin:hover {
-  background: linear-gradient(90deg, #004182, #0a66c2, #004182); 
-  background-size: 150% 150%;
-  animation: blueGlitter 2.5s linear infinite;
-  box-shadow: 0 0 15px rgba(10, 102, 194, 0.8),
-              0 0 30px rgba(10, 102, 194, 0.6);
+
   transform: scale(1.1);
 }
 

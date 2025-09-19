@@ -1,7 +1,11 @@
 import React, { useEffect } from "react";
 import "./Main2.css";
-import img2 from "../imgs/img2.png";
-import img3 from "../imgs/img3.png";
+import new1 from "../imgs/new1.jpg";
+import new2 from "../imgs/new2.jpg";
+import new3 from "../imgs/new3.jpg";
+import new4 from "../imgs/new4.jpg";
+import new5 from "../imgs/new5.png";
+import new6 from "../imgs/new6.jpg";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
@@ -97,10 +101,22 @@ export default function Main2() {
 
       <div className="imagee">
         <div className="ig1">
-          <img src={img2} alt="project1" />
+          <img src={new1} alt="project1" />
         </div>
         <div className="ig2">
-          <img src={img3} alt="project2" />
+          <img src={new2} alt="project2" />
+        </div>
+        <div className="ig2">
+          <img src={new3} alt="project2" />
+        </div>
+        <div className="ig2">
+          <img src={new4} alt="project2" />
+        </div>
+         <div className="ig2">
+          <img src={new5} alt="project2" />
+        </div>
+         <div className="ig2">
+          <img src={new6} alt="project2" />
         </div>
       </div>
 

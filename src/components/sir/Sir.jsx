@@ -1,6 +1,8 @@
 import React, { useEffect, useRef } from 'react'
 import "./Sir.css"
 import sir1 from "../imgs/sir1.png";
+import person2 from "../imgs/person2.png";
+
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
@@ -54,7 +56,7 @@ export default function Sir() {
         </div>
 
         <div className="sir-img-right">
-          <img src={sir1} alt="Business Growth" />
+          <img src={person2} alt="Business Growth" />
         </div>
       </div>
     </div>

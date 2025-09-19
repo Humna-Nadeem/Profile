@@ -38,7 +38,7 @@ const Slider = () => {
   return (
     <section className="slider-section">
       <h2 className="slider-heading">
-        <span className="purple">PEOPLE</span> <span className="white"> SAYS ABOUT WORK</span>
+        <span className="purple">WHAT</span><span className="white">PEOPLE SAYS ABOUT OUR WORK!</span>
       </h2>
       <button className="review-btn">See all our reviews</button>
 
